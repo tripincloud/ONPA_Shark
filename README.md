@@ -9,4 +9,5 @@ The list of protocols that the analyzer understands are the following :
 - Layer 3: IP
 - Layer 4: TCP
 - Layer 7: HTTP (only the header of requests and responses)
+
 At each run, the result of the analyzer are saved in a text file format to make it easier to read. 
