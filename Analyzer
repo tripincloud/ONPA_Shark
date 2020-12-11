@@ -4,7 +4,6 @@ import Fonctions
 t = open(sys.argv[1])
 
 liste = []
-Ethernet = []
 
 for ligne in t :
     f = ligne.split()
@@ -12,13 +11,19 @@ for ligne in t :
 
 liste = Fonctions.CleanVertical(liste)
 liste = Fonctions.CleanHorizontal(liste)
+"""Fonctions.OffsetChecker(liste)"""
 
 Ethernet = []
 IPv4 = []
-Fonctions.Extract(liste,Ethernet,IPv4)
+TCP = []
+Fonctions.Extract(liste,Ethernet,IPv4,TCP)
 
-print(Ethernet)
-print(IPv4)
+for i in Ethernet:
+    print(i)
+for i in IPv4:
+    print(i)
+for i in TCP:
+    print(i)
 
 
 
