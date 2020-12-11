@@ -1,0 +1,27 @@
+import sys
+import Fonctions
+
+t = open(sys.argv[1])
+
+liste = []
+Ethernet = []
+
+for ligne in t :
+    f = ligne.split()
+    liste.append(f)
+
+liste = Fonctions.CleanVertical(liste)
+liste = Fonctions.CleanHorizontal(liste)
+
+Ethernet = []
+IPv4 = []
+Fonctions.Extract(liste,Ethernet,IPv4)
+
+print(Ethernet)
+print(IPv4)
+
+
+
+
+
+
