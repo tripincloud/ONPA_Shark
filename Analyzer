@@ -9,14 +9,15 @@ for ligne in t :
     f = ligne.split()
     liste.append(f)
 
-liste = Fonctions.CleanVertical(liste)
-liste = Fonctions.CleanHorizontal(liste)
-"""Fonctions.OffsetChecker(liste)"""
+Fonctions.CleanVertical(liste)
+Fonctions.CleanHorizontal(liste)
+Fonctions.OffsetChecker(liste)
 
 Ethernet = []
 IPv4 = []
 TCP = []
-Fonctions.Extract(liste,Ethernet,IPv4,TCP)
+HTTP = []
+Fonctions.Extract(liste,Ethernet,IPv4,TCP,HTTP)
 
 for i in Ethernet:
     print(i)
@@ -24,6 +25,10 @@ for i in IPv4:
     print(i)
 for i in TCP:
     print(i)
+for i in HTTP:
+    print(i)
+
+Fonctions.affichage(liste,Ethernet,IPv4,TCP,HTTP)
 
 
 
