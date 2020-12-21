@@ -1,0 +1,12 @@
+--------------------------------------------------------------------------------------------------------------------------
+                                                        HOW TO 
+--------------------------------------------------------------------------------------------------------------------------
+Prérequis:
+- il faut que le fichier .txt de la trame se trouve dans le meme dossier que le Analyzer.py
+
+Utilisation:
+- Lancer le Analyzer.py par le biais de votre terminal 
+- Celui-ci affichera un message vous demandant de taper le nom du fichier de votre trame (exemple: trame.txt)
+- Après avoir entrer l'analyseur affichera sur le terminal le résultat de son analyse et le stockera dans un fichier texte nommé "result.txt" qui sera créer si inexistant 
+- Le fichier "result.txt" sera remis à zero avec les nouveaux résultats de chaque trame . 
+- Il est donc conseiller de le déplacer dans un autre dossier si vous souhaitez conserver les résultat de votre analyse avant une nouvelle réutilisation de l'analyseur.
